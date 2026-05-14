@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-white text-brand-ink font-sans antialiased;
+  }
+
+  a {
+    @apply transition-colors;
+  }
+}
+
+@layer components {
+  .container-site {
+    @apply max-w-site mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-brand-accent text-white text-sm font-medium hover:bg-brand-accentDark transition-colors;
+  }
+
+  .btn-ghost {
+    @apply inline-flex items-center gap-2 text-brand-accent text-sm font-medium hover:text-brand-accentDark transition-colors;
+  }
+
+  .section-title {
+    @apply text-2xl sm:text-3xl font-semibold text-brand-primary tracking-tight;
+  }
+}
